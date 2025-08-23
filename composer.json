@@ -1,0 +1,23 @@
+{
+    "name": "mugomes/miphantlibs",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Murilo Gomes Julio",
+            "email": "contato@mugomes.com.br",
+            "homepage": "https://www.mugomes.com.br"
+        }
+    ],
+    "_comment": [
+        "Copyright (C) 2025 Murilo Gomes Julio"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MiPhantLibs\\": "libs/"
+        }
+    }
+    
+    
+
+}
