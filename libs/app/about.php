@@ -92,7 +92,7 @@ class about
         $phpLicense = str_replace('/app', '/php', $server->documentroot());
 
         $txt .= $this->setLicense('MiPhant', $file->open($path->join($miphantLicense) . '/LICENSE'));
-        $txt .= $this->setLicense('MiPhantLibs', $file->open(dirname(__FILE__) . '/LICENSE'));
+        $txt .= $this->setLicense('MiPhantLibs', $file->open(dirname(__FILE__, 3) . '/LICENSE'));
         $txt .= $this->setLicense('Electron', $file->open($path->join($electronLicense) . '/LICENSE'));
 
         if (file_exists($path->join($phpLicense) . '/LICENSE')) {
