@@ -27,6 +27,6 @@ class server {
     }
 
     public function documentroot(): string {
-        return dirname(__FILE__, 4);
+        return preg_replace('~^(.+?/resources/app/).*~', '$1', dirname(__FILE__));
     }
 }
