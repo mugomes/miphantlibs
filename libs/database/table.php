@@ -2,7 +2,7 @@
 // Copyright (C) 2025 Murilo Gomes Julio
 // SPDX-License-Identifier: MIT
 
-// Site: https://github.com/mugomes
+// Support: https://www.mugomes.com.br/p/apoie.html
 
 namespace MiPhantLibs\database;
 
@@ -15,6 +15,22 @@ class table extends database
     public string $ctDefaultValue = '';
 
     private array $ctColumn = [];
+
+    private function clean()
+    {
+        $this->ctInteger = false;
+        $this->ctNull = false;
+        $this->ctAutoIncrement = false;
+        $this->ctPrimaryKey = false;
+        $this->ctDefaultValue = '';
+    }
+
+    private function cleanAll()
+    {
+        $this->clean();
+        $this->ctColumn = [];
+        $this->sTable = [];
+    }
 
     public function setInt()
     {
@@ -64,16 +80,20 @@ class table extends database
         return $this;
     }
 
-    public function create() {
+    public function create()
+    {
         try {
-            $sql = 'CREATE TABLE IF NOT EXISTS ' . $this->sTable[0] . ' (' . implode(',', $this->ctColumn) . ');';            
+            $sql = 'CREATE TABLE IF NOT EXISTS ' . $this->sTable[0] . ' (' . implode(',', $this->ctColumn) . ');';
+            echo $sql . '<br><br>';
             $this->sConecta->exec($sql);
+            $this->cleanAll();
         } catch (\SQLite3Exception $ex) {
             echo $ex->getMessage();
         }
     }
 
-    public function exec(string $sql) {
+    public function exec(string $sql)
+    {
         $this->sConecta->exec($sql);
     }
 }
