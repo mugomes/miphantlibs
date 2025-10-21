@@ -2,7 +2,7 @@
 // Copyright (C) 2025 Murilo Gomes Julio
 // SPDX-License-Identifier: MIT
 
-// Support: https://www.mugomes.com.br/p/apoie.html
+// Site: https://github.com/mugomes
 
 namespace MiPhantLibs\app;
 

@@ -2,7 +2,7 @@
 // Copyright (C) 2025 Murilo Gomes Julio
 // SPDX-License-Identifier: MIT
 
-// Support: https://www.mugomes.com.br/p/apoie.html
+// Site: https://github.com/mugomes
 
 namespace MiPhantLibs\database;
 
@@ -35,9 +35,6 @@ class database
     private bool $sAsc = true;
 
     protected string $sLimit = '';
-
-    // Select
-    protected array $sRows = [];
 
     public const READWRITE = SQLITE3_OPEN_READWRITE;
     public const CREATEONLY = SQLITE3_OPEN_CREATE;
