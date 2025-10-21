@@ -2,14 +2,16 @@
 // Copyright (C) 2025 Murilo Gomes Julio
 // SPDX-License-Identifier: MIT
 
-// Support: https://www.mugomes.com.br/p/apoie.html
+// Site: https://github.com/mugomes
 
 namespace MiPhantLibs\database;
 
-use SQLite3;
+class select extends database
+{
+    protected array $sRows = [];
 
-class select extends database {
-    public function select() {
+    public function select()
+    {
         try {
             $sql = 'SELECT ';
             $sql .= (empty($this->sColumns)) ? '*' : implode(', ', $this->sColumns);
@@ -47,7 +49,18 @@ class select extends database {
         }
     }
 
-    public function fetch() {
+    public function fetch()
+    {
         return ($this->sPrepare) ? $this->sData->fetchArray() : $this->sResult->fetchArray();
+    }
+
+    public function rows(array $values)
+    {
+        $this->sRows = $values;
+    }
+
+    public function row(string $name): string|int
+    {
+        return empty($this->sRows[$name]) ? '' : $this->sRows[$name];
     }
 }
