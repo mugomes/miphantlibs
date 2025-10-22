@@ -84,7 +84,6 @@ class table extends database
     {
         try {
             $sql = 'CREATE TABLE IF NOT EXISTS ' . $this->sTable[0] . ' (' . implode(',', $this->ctColumn) . ');';
-            echo $sql . '<br><br>';
             $this->sConecta->exec($sql);
             $this->cleanAll();
         } catch (\SQLite3Exception $ex) {
