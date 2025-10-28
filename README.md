@@ -1,6 +1,10 @@
 # MiPhantLibs
 MiPhantLibs is a library that makes desktop system development easier using MiPhant.
 
+## Installation
+
+`composer require mugomes/miphanttpl`
+
 ## Features
 
 - App: About, Arrays, Check Update, Config, Create Shortcut, DateTime, File, Folder, Functions for JS Script, Numbers, Path, Router, Text.
