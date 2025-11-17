@@ -14,15 +14,25 @@ MiPhantLibs is a library that makes desktop system development easier using MiPh
 - Security: Items, GET, POST, and Password.
 - System: Env, Exec, Platform, and Server
 
+## Installation
+
+`composer require mugomes/miphantlibs`
+
 ## Support
 
-- https://apoia.se/profmu
-- https://www.asaas.com/c/girp15xsowg4dpvf (Only in Brazil)
-- https://www.asaas.com/c/0f9eydhmgg8e3mrj (Only in Brazil - Monthly)
-- https://donate.stripe.com/14kdSugShfxs9by6oo
+- GitHub: https://github.com/sponsors/mugomes/
+- More: https://www.mugomes.com.br/apoie.html
 
 ## License
 
-Copyright (C) 2025 Murilo Gomes Julio
+The MiPhantLibs is provided under:
 
+<<<<<<< HEAD
 Licensed under the [MIT](https://github.com/mugomes/miphantlibs/blob/main/LICENSE) license.
+=======
+[SPDX-License-Identifier: LGPL-2.1-only](https://github.com/mugomes/miphantlibs/blob/main/LICENSE)
+
+Beign under the terms of the GNU Lesser General Public License version 2.1 only.
+
+All contributions to the MiPhantLibs are subject to this license.
+>>>>>>> 2f8f4df (Changed license)
