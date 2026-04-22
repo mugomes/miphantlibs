@@ -1,23 +1,23 @@
 {
     "name": "mugomes/miphantlibs",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "authors": [
         {
             "name": "Murilo Gomes Julio",
             "email": "contato@mugomes.com.br",
-            "homepage": "https://www.mugomes.com.br"
+            "homepage": "https://youtube.com/@mugomesoficial"
         }
     ],
     "_comment": [
-        "Copyright (C) 2025 Murilo Gomes Julio"
+        "Copyright (C) 2025-2026 Murilo Gomes Julio"
     ],
     "license": "LGPL-2.1-only",
     "autoload": {
         "psr-4": {
             "MiPhantLibs\\": "libs/"
         }
+    },
+    "require": {
+        "mugomes/miphanttpl": "^3.0"
     }
-    
-    
-
 }
