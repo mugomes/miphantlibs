@@ -15,7 +15,7 @@ MiPhantLibs is a library that makes desktop system development easier using MiPh
 ## Support
 
 - GitHub: https://github.com/sponsors/mugomes/
-- More: https://www.mugomes.com.br/apoie.html
+- More: https://mugomes.github.io/apoie.html
 
 ## License
 
