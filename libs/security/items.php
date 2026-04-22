@@ -1,8 +1,8 @@
 <?php
-// Copyright (C) 2025 Murilo Gomes Julio
+// Copyright (C) 2025-2026 Murilo Gomes Julio
 // SPDX-License-Identifier: LGPL-2.1-only
 
-// Site: https://www.mugomes.com.br
+// Site: https://youtube.com/@mugomesoficial
 
 namespace MiPhantLibs\security;
 

@@ -1,14 +1,14 @@
 <?php
-// Copyright (C) 2025 Murilo Gomes Julio
+// Copyright (C) 2025-2026 Murilo Gomes Julio
 // SPDX-License-Identifier: LGPL-2.1-only
 
-// Site: https://www.mugomes.com.br
+// Site: https://youtube.com/@mugomesoficial
 
 namespace MiPhantLibs\app;
 
 use MiPhantLibs\langs\translate;
-use MiPhantLibs\layout\html;
 use MiPhantLibs\system\server;
+use MiPhantTPL\MiPhantTPL;
 
 class about
 {
@@ -21,7 +21,7 @@ class about
 
     public function setLicense(string $name, string $text): string
     {
-        $html = new html();
+        $html = new MiPhantTPL();
 
         $styleButton = 'background-color: #79b7c8;
         color: #003470;
@@ -63,7 +63,7 @@ class about
     public function show($text = '')
     {
         $config = new config();
-        $html = new html();
+        $html = new MiPhantTPL();
         $txt = $html->h1($this->traduzir->get('About %s', $config->get('app', 'name')));
         $txt .= $html->p($config->get('app', 'name') . ' ' . $config->get('app', 'version'));
         $txt .= $html->p($this->traduzir->get('Developed by: %s', $config->get('app', 'author', 'name')));

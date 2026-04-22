@@ -1,8 +1,8 @@
 <?php
-// Copyright (C) 2025 Murilo Gomes Julio
+// Copyright (C) 2025-2026 Murilo Gomes Julio
 // SPDX-License-Identifier: LGPL-2.1-only
 
-// Site: https://www.mugomes.com.br
+// Site: https://youtube.com/@mugomesoficial
 
 namespace MiPhantLibs\app;
 
@@ -46,7 +46,7 @@ class router
         return $this->sNoPHP;
     }
 
-    public function get(string $path, mixed $funcao = false): bool
+    public function get(string $path, mixed $function = false): bool
     {
         if (!$this->isFile) {
             $sFilename = rtrim(ltrim($path, '/'), '/');
@@ -55,19 +55,18 @@ class router
             if ($sURL == $sFilename) {
                 if (!$this->encontrado) {
                     $this->encontrado = true;
-                    if (!is_bool($funcao)) {
-                        $funcao();
+                    if (!is_bool($function)) {
+                        $function();
                     }
                     return true;
                 } else {
                     return false;
                 }
             } else {
-
                 if (!$this->encontrado) {
                     if ($path == '404') {
-                        if (!is_bool($funcao)) {
-                            $funcao();
+                        if (!is_bool($function)) {
+                            $function();
                         }
 
                         return true;
